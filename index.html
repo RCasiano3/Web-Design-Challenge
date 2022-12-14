@@ -1,0 +1,94 @@
+<!-- Landing Page -->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather Analysis Landing Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    </head>
+    <body>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand navbar-custom" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navbar-custom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                    </div>
+                </li>
+                    <a class="nav-link navbar-custom" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-custom" href="data.html">Data</a>
+                </li>                   
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="row">
+      
+        <div class="col-md-1"></div>
+
+        <div class="col-md-7 content">
+            
+            <h1>Summary: Latitude vs. Various Climate Factors</h1>
+            <hr>
+            <article>
+                <img src="assets/images/LatvsWindSpeed.png" alt="Tempurature Map" class="big_img" width=50% style="float: left">
+                <br>
+                <p>For this assignment, we worked to create a Python script to visualize the weather of over 500 cities of varying distances from the equator. To obtain the desired information, data on the random cities was obtained through the OpenWeatherMap API and queries were then established to identify various relationshps of latitude vs climate factors.</p>
+                <p>The data obtained through these queries was then assembled into specific databases. Matplotlib was then utilized to visualize the databases for the climate factors of maximum temperature, humidity, cloudiness, and wind speed vs. latitude. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            </article>
+        </div>
+        
+        
+
+        <div class="col-md-3 content">
+            <h1>Visualizations</h1>
+            <article>
+            <hr>
+                <a href="visualizations/temp.html">
+                    <img src="assets/images/LatvsWindSpeed.png" alt="Tempurature Graph" class="small_img">
+                </a>
+                <a href="visualizations/humidity.html">
+                    <img src="assets/images/LatvsHumidity.png" alt="Humidity Graph" class="small_img">
+                </a>
+                <a href="visualizations/cloudiness.html">
+                    <img src="assets/images/LatvsCloudiness.png" alt="Cloudiness Graph" class="small_img">
+                </a>
+                <a href="visualizations/wind.html">
+                    <img src="assets/images/LatvsWindSpeed.png" alt="WindSpeed Graph" class="small_img">
+                </a>
+            </article>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        
+        
+        <script src="" async defer></script>
+    </body>
+</html>
